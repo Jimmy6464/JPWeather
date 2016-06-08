@@ -1,0 +1,21 @@
+//
+//  weather.pch
+//  JPWeather
+//
+//  Created by Jimmy on 15/11/16.
+//  Copyright (c) 2015年 Jimmy. All rights reserved.
+//
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import "NSArray+Log.h"
+#import "UIImageView+WebCache.h"
+#import "common.h"
+#endif
+/*
+ 项目名：ＪＰ天气
+ 功能：
+    1，定位查找当地天气
+    2, 查找全国各地的天气
+    3, 可查询实实时天气和未来一个星期内的天气
+ */

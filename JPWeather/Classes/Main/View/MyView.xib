@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyView">
+            <rect key="frame" x="0.0" y="0.0" width="127" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="week" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dyd-WH-QYp">
+                    <rect key="frame" x="13" y="14" width="63" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="high" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xno-Ku-ggK">
+                    <rect key="frame" x="81" y="43" width="51" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="weather" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJK-Y0-DFY">
+                    <rect key="frame" x="8" y="98" width="68" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="low" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6x6-Ta-OIU">
+                    <rect key="frame" x="81" y="77" width="32" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EZj-zz-kEm">
+                    <rect key="frame" x="13" y="37" width="63" height="61"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="3WN-qw-qeT"/>
+                        <constraint firstAttribute="height" constant="60" id="YNk-NN-h4T"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rJK-Y0-DFY" firstAttribute="leading" secondItem="Dyd-WH-QYp" secondAttribute="leading" id="A3b-nL-YcB"/>
+                <constraint firstItem="rJK-Y0-DFY" firstAttribute="top" secondItem="EZj-zz-kEm" secondAttribute="bottom" constant="5" id="Mf9-OP-rMy"/>
+                <constraint firstItem="xno-Ku-ggK" firstAttribute="leading" secondItem="EZj-zz-kEm" secondAttribute="trailing" constant="5" id="OZ6-K9-HPM"/>
+                <constraint firstItem="6x6-Ta-OIU" firstAttribute="leading" secondItem="EZj-zz-kEm" secondAttribute="trailing" constant="5" id="U2Q-X3-yTS"/>
+                <constraint firstItem="EZj-zz-kEm" firstAttribute="top" secondItem="Dyd-WH-QYp" secondAttribute="bottom" constant="5" id="YuL-ds-bo0"/>
+                <constraint firstItem="6x6-Ta-OIU" firstAttribute="bottom" secondItem="EZj-zz-kEm" secondAttribute="bottom" id="Zed-wj-WFb"/>
+                <constraint firstItem="xno-Ku-ggK" firstAttribute="top" secondItem="EZj-zz-kEm" secondAttribute="top" id="aaC-xU-RtI"/>
+                <constraint firstItem="Dyd-WH-QYp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="gJP-io-5NO"/>
+                <constraint firstItem="EZj-zz-kEm" firstAttribute="leading" secondItem="Dyd-WH-QYp" secondAttribute="leading" id="nvd-LN-XIU"/>
+                <constraint firstAttribute="trailing" secondItem="rJK-Y0-DFY" secondAttribute="trailing" id="sOH-Kx-BMU"/>
+                <constraint firstItem="Dyd-WH-QYp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="y9I-nE-C4t"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tempHighLbl" destination="xno-Ku-ggK" id="cLX-Qb-LoP"/>
+                <outlet property="tempLowLbl" destination="6x6-Ta-OIU" id="BFO-me-Qnw"/>
+                <outlet property="weatherIcon" destination="EZj-zz-kEm" id="g4n-2p-gVr"/>
+                <outlet property="weatherlbl" destination="rJK-Y0-DFY" id="jFv-07-ful"/>
+                <outlet property="weekLbl" destination="Dyd-WH-QYp" id="7gw-oY-T1w"/>
+            </connections>
+            <point key="canvasLocation" x="238.5" y="225"/>
+        </view>
+    </objects>
+</document>
